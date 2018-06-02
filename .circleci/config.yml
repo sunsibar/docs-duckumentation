@@ -9,7 +9,8 @@ jobs:
         - run:
             name: Compile all books
             command: |
-                . /project/deploy/bin/activate && make
+                . /project/deploy/bin/activate && make compile-native
+
         - store_artifacts:
               path: duckuments-dist
               destination: duckuments-dist
