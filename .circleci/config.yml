@@ -3,43 +3,13 @@ jobs:
     build:
         docker:
         - image: andreacensi/mcdp_manual:1
-          environment:
-              COLUMNS: 160
-
-              MPLBACKEND: agg
-
         resource_class: large
         steps:
         - checkout
         - run:
-            name: virtualenv
-            command: |
-                ln -s /project/deploy deploy
-
-        - run:
             name: Compile all books
             command: |
                 . /project/deploy/bin/activate && make
-#
-#        - run:
-#            name: Create index of webpage
-#            command: |
-#              make summaries
-
-#        - run:
-#            when: always
-#            name: Package artifacts
-#            command:  |
-#                find duckuments-dist -name '*.old' -delete
-#                make package-artifacts
-
-#        - store_artifacts:
-#              path: out/package.tgz
-#              destination: out/package.tgz
-#
-#        - test-results-store:
-#            path: duckuments-dist/junit
-#
-#        - store_artifacts:
-#              path: duckuments-dist
-#              destination: duckuments-dist
+        - store_artifacts:
+              path: duckuments-dist
+              destination: duckuments-dist
