@@ -4,7 +4,7 @@ compile-native:
 	./run-book-native.sh duckumentation docs
 
 compile-docker:
-	docker pull andreacensi/mcdp_manual:1 
+	docker pull andreacensi/mcdp_manual:1
 	./run-book-docker.sh duckumentation docs
 
 install-docker-ubuntu16:
