@@ -1,4 +1,7 @@
 all:
+	cat <<- EOF
+	Hello!
+	EOF
 
 compile-native:
 	./run-book-native.sh duckumentation docs
@@ -17,5 +20,7 @@ install-docker-ubuntu16:
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 	sudo apt-get update
 	sudo apt-get install docker-ce
-	sudo adduser -G docker $USER
+
+	echo "Adding user to docker group"
+	sudo adduser $USER docker
 
