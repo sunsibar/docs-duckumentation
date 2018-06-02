@@ -19,7 +19,7 @@ jobs:
         - run:
             name: Compile all books
             command: |
-                make
+                . /project/deploy/bin/activate && make
 #
 #        - run:
 #            name: Create index of webpage
