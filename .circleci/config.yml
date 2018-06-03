@@ -8,9 +8,7 @@ jobs:
         - checkout
         - run:
             name: Compile
-            command: |
-                make compile-native-ci
-
+            command: make compile-native-ci
         - store_artifacts:
               path: duckuments-dist
               destination: duckuments-dist
