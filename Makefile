@@ -3,16 +3,14 @@ BOOKNAME=`ls -1 $(BASE)`
 SRC=book/$(BOOKNAME)
 IMAGE=andreacensi/duckuments:1
 
-
 all:
 	cat README.md
 
 clean:
-	rm -rf out
-
+	rm -rf out duckuments-dist
 
 compile-native:
-	./run-book-native.sh duckumentation docs
+	./run-book-native.sh $(BOOKNAME) $(SRC) $(RESOURCES)
 
 compile-docker:
 	docker pull $(IMAGE)
@@ -26,7 +24,7 @@ compile-docker:
 
 compile-native-ci:
 	. /project/deploy/bin/activate && \
-		/project/run-book-native.sh $(BOOKNAME) $(SRC)
+		/project/run-book-native.sh $(BOOKNAME) $(SRC) $(RESOURCES)
 
 install-docker-ubuntu16:
 	sudo apt-get remove docker docker-engine docker.io
