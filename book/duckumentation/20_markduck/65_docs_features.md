@@ -470,7 +470,7 @@ For example, you might have a script whose output is:
     Error. I cannot find the scuderia file.
     See: http://purl.org/dth/scuderia
 
-When the user clicks on the link, they will be redirected to [](#scuderia).
+When the user clicks on the link, they will be redirected to the topic called "scuderia".
 
 ## Comments
 

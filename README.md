@@ -1,22 +1,15 @@
-
-
-# Running using Docker
-
-Install Docker:
-
-    make install-docker-ubuntu16
+## Running using Docker
     
-Run:
+First run:
 
     $ git submodule sync --recursive
     $ git submodule update --init --recursive
 
+Then install Docker:
+
+    $ make install-docker-ubuntu16
+
+Then compile using:
+
     $ make compile-docker
 
-# Native run
-
-First, install dependencies. (TODO: write instructions)
-
-To compile natively:
-
-	$ make compile-native
