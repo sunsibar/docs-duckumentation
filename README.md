@@ -8,11 +8,14 @@ Install Docker:
     
 Run:
 
-    make compile-docker
+    $ git submodule sync --recursive
+    $ git submodule update --init --recursive
+
+    $ make compile-docker
 
 # Native run
 
-First, install dependencies.
+First, install dependencies. (TODO: write instructions)
 
 To compile natively:
 
