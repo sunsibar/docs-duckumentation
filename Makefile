@@ -1,14 +1,32 @@
+BASE=book
+BOOKNAME=`ls -1 $(BASE)`
+SRC=book/$(BOOKNAME)
+IMAGE=andreacensi/duckuments:1
+
+
 all:
-	cat <<- EOF
-	Hello!
-	EOF
+	cat README.md
+
+clean:
+	rm -rf out
+
 
 compile-native:
 	./run-book-native.sh duckumentation docs
 
 compile-docker:
-	docker pull andreacensi/mcdp_manual:1
-	./run-book-docker.sh duckumentation docs
+	docker pull $(IMAGE)
+
+	docker run \
+		-v $(PWD):/duckuments \
+		-v $(PWD):/home/$(USER) \
+		-e USER=$(USER) -e USERID=`id -u` --user `id -u` \
+		$(IMAGE) \
+		$(BOOKNAME) $(SRC)
+
+compile-native-ci:
+	. /project/deploy/bin/activate && \
+		/project/run-book-native.sh $(BOOKNAME) $(SRC)
 
 install-docker-ubuntu16:
 	sudo apt-get remove docker docker-engine docker.io

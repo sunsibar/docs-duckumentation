@@ -71,7 +71,7 @@ NP=${PWD}/node_modules:${NODE_PATH}
 
 #source deploy/bin/activate
 
-mcdp_render_manual="sudo docker run -v $PWD:/duckuments -e USER=$USER -e USERID=$UID -v $PWD:/home/$USER --user $UID andreacensi/mcdp_manual:1  mcdp-render-manual"
+mcdp_render_manual="docker run -v $PWD:/duckuments -e USER=$USER -e USERID=$UID -v $PWD:/home/$USER --user $UID andreacensi/duckumnets:1  mcdp-render-manual"
 
 DISABLE_CONTRACTS=1 NODE_PATH=${NP}  ${mcdp_render_manual} \
     --src ${src} \

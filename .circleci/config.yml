@@ -2,14 +2,14 @@ version: 2
 jobs:
     build:
         docker:
-        - image: andreacensi/mcdp_manual:1
+        - image: andreacensi/duckuments:1
         resource_class: large
         steps:
         - checkout
         - run:
-            name: Compile all books
+            name: Compile
             command: |
-                . /project/deploy/bin/activate && make compile-native
+                make compile-native-ci
 
         - store_artifacts:
               path: duckuments-dist
