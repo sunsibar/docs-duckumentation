@@ -167,14 +167,16 @@ rather than `[](#eq:![name])`.
 
 ## LaTeX symbols
 
-The LaTeX symbols definitions are in a file called [`docs/symbols.tex`][symbols].
+The LaTeX symbols definitions are in a file called `docs/symbols.tex`. 
 
 
-[symbols]: github:org=Duckietown,repo=duckuments,path=docs/symbols.tex
+<!-- [symbols]: github:org=Duckietown,repo=duckuments,path=docs/symbols.tex -->
 
 
 Put all definitions there; if they are centralized it is easier to check
 that they are coherent.
+
+TODO: this mechanism will be changed to include any file called `*.symbols.tex`.
 
 
 ## Bibliography support {#bibliography-support}
