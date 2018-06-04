@@ -206,9 +206,9 @@ Requires: In order to compile the figures into PDFs you need to have Inkscape in
 </div>
 
 
-To embed latex in your figures, you can add it directly to a file and save it as `![filename].svg` file and save anywhere in the `/docs` directory.
+To embed latex in your figures, you can add it directly to a file and save it as `![filename].svg` file and save in the `/docs` directory in a subfolder called `assets/svg2pdf`.
 
-You can run:
+You can then run:
 
     $ make process-svg-figs
 
@@ -217,18 +217,17 @@ And the SVG file will be compiled into a PDF figure with the LaTeX commands prop
 You can then include the PDF file in a normal way ([](#figures)) using `![filename].pdf` as the filename in the <code>&lt;img&gt;</code> tag.
 
 
-<div figure-id="fig:inkscape">
-    <figcaption>Embedding LaTeX in images</figcaption>
-
-    <div figure-id="subfig:sample-no-process">
-        <figcaption>Image saved as svg</figcaption>
-          <img src="sample-no-process.converted.png" style='width: 20em'/>
-    </div>
-    <div figure-id="subfig:sample">
+<figure id="inkscape">
+  <figcaption>Embedding LaTeX in images</figcaption>
+  <figure id="sample-no-process">
+     <figcaption>Image saved as svg</figcaption>
+      <img src="assets/svg2pdf/sample-no-process.converted.png" style='width: 20em'/>
+    </figure>
+    <figure id="sample">
         <figcaption>Image as PDF after processing</figcaption>
-          <img src="sample.pdf" style='width: 20em; height: auto'/>
-    </div>
-</div>
+          <img src="assets/svg2pdf/sample.pdf" style='width: 20em; height: auto'/>
+  </figure>
+</figure>
 
 
 
