@@ -9,6 +9,7 @@ Then install Docker:
 
     $ make install-docker-ubuntu16
 
+You need to logout and login again for ubuntu groups to be updated.
 Then compile using:
 
     $ make compile-docker
