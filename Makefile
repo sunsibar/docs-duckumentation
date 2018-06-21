@@ -1,9 +1,11 @@
 BASE:=book
 BOOKNAME:=`ls -1 $(BASE)`
 SRC:=book/$(BOOKNAME)
-IMAGE:=andreacensi/duckuments:1
+IMAGE:=andreacensi/duckuments:devel
 
 all:
 	cat README.md
+
+
 
 include resources/makefiles/setup.Makefile
