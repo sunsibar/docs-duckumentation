@@ -14,7 +14,7 @@ In a nutshell:
 
 We assume that you have setup a Github account with working public keys.
 
-See: [Basic SSH config](#ssh-local-configuration).
+See: [Basic SSH config](+software_reference#ssh-local-configuration).
 
 See: [Key pair creation](#howto-create-key-pair).
 
@@ -69,7 +69,7 @@ TODO for volunteer: add image of pull request
 
 #### Option 2: Use the command-line program `hub`
 
-You can create a pull request from the command-line using [`hub`](#hub):
+You can create a pull request from the command-line using [`hub`](+software_reference#hub):
 
 ```
 $ hub pull-request
@@ -127,7 +127,9 @@ Special notes:
 
 * If you have a problem with a generated PDF, please attach the offending PDF.
 * If you say something like "This happens for Figure 3", then it is hard to know which figure you are referencing exactly, because numbering changes from commit to commit.
-  If you want to refer to specific parts of the text, please commit all your work on your branch, and obtain the name of the commit using the following commands:
+
+
+If you want to refer to specific parts of the text, please commit all your work on your branch, and obtain the name of the commit using the following commands:
 
 ```
 $ git -C ~/duckuments rev-parse HEAD      # commit for duckuments
