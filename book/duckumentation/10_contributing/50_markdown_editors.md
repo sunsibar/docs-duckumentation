@@ -17,8 +17,8 @@ Typhora is our favorite beacause it allows to preview LaTeX formulas.
 
 ## Atom
 
-See: [](+software_reference#hub#atom)
+See: [](+software_reference#atom)
 
 ## PyCharm
 
-See: [](+software_reference#hub#pycharm)
+See: [](+software_reference#pycharm)
