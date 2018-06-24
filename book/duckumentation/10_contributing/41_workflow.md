@@ -22,7 +22,7 @@ See: [Adding public key on Github](#howto-add-pubkey-to-github).
 
 ### Install Docker
 
-Before you start, make sure that you have [installed Docker](#docker).
+Before you start, make sure that you have [installed Docker](+software_reference#docker).
 
  
 ### Fork the `docs-![book]` repo on the Github site
