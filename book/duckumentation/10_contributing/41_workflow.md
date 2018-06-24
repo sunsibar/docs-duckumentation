@@ -75,7 +75,7 @@ You can create a pull request from the command-line using [`hub`](+software_refe
 $ hub pull-request
 ```
 
-See: [](#hub)
+See: [](+software_reference#hub)
 
 
 ## Using CircleCI
