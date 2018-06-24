@@ -16,9 +16,9 @@ We assume that you have setup a Github account with working public keys.
 
 See: [Basic SSH config](+software_reference#ssh-local-configuration).
 
-See: [Key pair creation](#howto-create-key-pair).
+See: [Key pair creation](+software_reference#howto-create-key-pair).
 
-See: [Adding public key on Github](#howto-add-pubkey-to-github).
+See: [Adding public key on Github](+software_reference#howto-add-pubkey-to-github).
 
 ### Install Docker
 
