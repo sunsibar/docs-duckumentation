@@ -18,7 +18,13 @@ Then install Docker:
 
 *Note*: you need to be in group `docker`. The script adds you, but it does not take effect immediately. You need to exit the console and re-enter.
 
+*Note*: for Mac this is not needed
+
 # Compiling
+
+*Note*: For mac you will need to do:
+
+    $ brew install coreutils
 
 Then compile using:
 
