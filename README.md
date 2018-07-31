@@ -16,9 +16,10 @@ Then install Docker:
 
     $ make install-docker-ubuntu16
 
-*Note*: you need to be in group `docker`. The script adds you, but it does not take effect immediately. You need to exit the console and re-enter.
 
-*Note*: for Mac this is not needed
+*Note*: you need to be in group `docker`. The script adds you, but it does not take effect immediately. You will need to exit the console and re-enter. You may need to log out in again for Ubuntu groups to be updated.
+
+*Note*: For Mac OS this is not required.
 
 # Install other dependencies
 
