@@ -20,11 +20,24 @@ Then install Docker:
 
 *Note*: for Mac this is not needed
 
-# Compiling
+# Install other dependencies
 
-*Note*: For mac you will need to do:
+## Mac OS
 
     $ brew install coreutils
+
+## Ubuntu
+
+Make sure to have `git 2.13+` and `git lfs 2.5+`. 
+To install the latest versions of these, run the following commands:
+
+1. `sudo add-apt-repository ppa:git-core/ppa && sudo apt update && sudo apt install git`
+2. `curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash`
+3. `sudo apt-get install git-lfs`
+4. `git lfs install`
+5. `git lfs pull` (inside documentation directory)
+
+# Compiling
 
 Then compile using:
 
