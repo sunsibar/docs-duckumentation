@@ -20,6 +20,14 @@ Then install Docker:
 
 # Compiling
 
+Note: On Ubuntu, make sure to have `git 2.13+` and `git lfs 2.5+`. To install the latest versions of these, run the following commands:
+
+1. `sudo add-apt-repository ppa:git-core/ppa && sudo apt update && sudo apt install git`
+2. `curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash`
+3. `sudo apt-get install git-lfs`
+4. `git lfs install`
+5. `git lfs pull` (inside documentation directory)
+
 Then compile using:
 
     $ make compile-docker
