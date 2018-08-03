@@ -19,8 +19,14 @@ $ git submodule update --recursive
 
 The command `--depth 10` tells it we do not care about the whole history.
 
-<!--
 ### Setup the virtual environment
+```
+$ cd ~/duckuments
+$ virtualenv --system-site-packages deploy 
+$ git clone git@github.com:AndreaCensi/mcdp.git
+```
+
+<!--
 
 Use this to install a virtual environment and dependencies:
 
@@ -116,16 +122,16 @@ It also created a new Git remote called `![username]`:
 Tell Git that you want to push to your fork:
 
     $ git branch --set-upstream-to ![username]/master
-    
+
 Now, when you push you will push to your fork:
 
     $ git push 
-    
+
 To create a pull request, use:
 
     $ hub pull-request
     https://github.com/duckietown/docs-exercises/pull/![id]
-    
+
 Visit the URL to check your pull request. 
 
 
@@ -145,7 +151,7 @@ As before, make sure you are on your fork:
      * [new branch]      master     -> ![username]/master
     new remote: ![username]
     $ git branch --set-upstream-to ![username]/master
-    
+
 
 ### Updating
 
@@ -163,15 +169,15 @@ If you go to `~/duckuments`, the status will appear like this:
       (commit or discard the untracked or modified content in submodules)
     
         modified:   docs/docs-exercises (new commits)
-    
+
 This means that you have changes in the submodules that you need to commit.
 
 Just like with files, you can use `git commit` to do so:
 
     $ git commit -a -m "Update of repository"
     $ git push
-    
+
 Now create the pull request using:
 
     $ hub pull-request
-    
+
