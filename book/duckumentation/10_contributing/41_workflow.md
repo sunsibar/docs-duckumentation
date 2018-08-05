@@ -99,7 +99,7 @@ where `![username]` is your Github username.
 Click "start building".
 
 
-#### Add ssh key
+#### Add ssh key {#workaround-circleci}
 
 Go to "settings", "Checkout SSH keys". 
 
