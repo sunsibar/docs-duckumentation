@@ -1,6 +1,6 @@
-## Fork this repo
 
-Fork this repo to edit it.
+
+## Installation 
 
 
 ## Running using Docker
@@ -10,7 +10,7 @@ First run:
     $ git submodule sync --recursive
     $ git submodule update --init --recursive
 
-# Installing Docker
+## Installing Docker on Ubuntu 16
 
 Then install Docker:
 
