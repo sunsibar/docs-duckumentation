@@ -1,25 +1,21 @@
-
-
 ## Installation 
 
 
-## Running using Docker
+Install the [Duckietown Shell](http://github.com/duckietown/duckietown-shell).
 
-First run:
+Make sure that the `resources` directory is downloaded:
 
     $ git submodule sync --recursive
     $ git submodule update --init --recursive
 
-## Installing Docker on Ubuntu 16
+## Compilation
 
-Then install Docker:
+Compile using:
 
-    $ make install-docker-ubuntu16
+    $ dts docs build
+    
+Re-compile from scratch using:
 
-*Note*: you need to be in group `docker`. The script adds you, but it does not take effect immediately. You need to exit the console and re-enter.
-
-# Compiling
-
-Then compile using:
-
-    $ make compile-docker
+    $ dts docs clean
+    $ dts docs build
+    
