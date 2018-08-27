@@ -6,7 +6,7 @@ This section describes how to compile all the books at the same time.
 
 ### Fork the `duckuments` repo
 
-In the following, we are going to assume that the documentation system is installed in `~/duckuments`. However, it can be installed anywhere.
+In the following, we are going to assume that the documentation system is installed in `~/duckuments`. However, it can be installed anywhere.  You will need to add your public key to github following [these instructions](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
 
 Fork the `duckietown/duckuments` repository in the `~/duckuments` directory:
 

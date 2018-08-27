@@ -1,4 +1,21 @@
-This repository is a duckuments book. 
+## Installation 
 
-Please see the repository [docs-duckumentation](https://github.com/duckietown/docs-duckumentation)
-for instructions on how to compile this book, and use that repository for filing issues.
+
+Install the [Duckietown Shell](http://github.com/duckietown/duckietown-shell).
+
+Make sure that the `resources` directory is downloaded:
+
+    $ git submodule sync --recursive
+    $ git submodule update --init --recursive
+
+## Compilation
+
+Compile using:
+
+    $ dts docs build
+    
+Re-compile from scratch using:
+
+    $ dts docs clean
+    $ dts docs build
+    
