@@ -1,6 +1,6 @@
 # Second method: local editing+docker {#duckumentation-workflow status=ready}
 
-This section describes the workflow to edit the documentation for one single obok.
+This section describes the workflow to edit the documentation for one single book.
 
 In a nutshell:
 
@@ -24,6 +24,9 @@ See: [Adding public key on Github](+software_reference#howto-add-pubkey-to-githu
 
 Before you start, make sure that you have [installed Docker](+software_reference#docker).
 
+### Install the Duckieton Shell
+
+Install the Duckietown Shell using the instructions at <http://github.com/duckietown/duckietown-shell>.
  
 ### Fork the `docs-![book]` repo on the Github site
 
@@ -47,11 +50,15 @@ Do your edits on your local copy.
 
 ### Compile
 
-Compile using:
+Compile using the `docs` commands in the Duckietown Shell:
 
-```
-$ make compile-docker
-```
+    $ dts docs build
+
+Re-compile from scratch using:
+
+    $ dts docs clean
+    $ dts docs build
+
 
 ### Commit and push
 
@@ -99,44 +106,6 @@ where `![username]` is your Github username.
 Click "start building".
 
 
-#### Add ssh key {#workaround-circleci}
-
-Go to "settings", "Checkout SSH keys". 
-
-Remove all the configured SSH keys / deploy keys / user keys.
-
-Then go to "settings", "SSH Permissions".
-
-Add this SSH key, a read-only key for the repositories:
-    
-    -----BEGIN RSA PRIVATE KEY-----
-    MIIEpQIBAAKCAQEAt7YHU1FRGitlzeO3z7wBE9wQwexPV15d1GjzFlQalPPPvPl8
-    8j5Y3+4FD5LX55+mH8yTqyqfxk1+ncnQxNibgjT6Srs07oT6mDYcb4m4O7sPUDDr
-    oOQQ65sBjQSZFM/Odpt/e2lbvY5StLNDwFhnp1WN33nuX+R7lp+GvDjctKjzwTMW
-    mEv+eY1iIbPgVqP5KL18r6yqadQtsZVzbUPWGkvNEiuvi7Vla4ossUsRiOr0EKZI
-    JhzARzZk3wb9reN1DKbWZsc19tkuJ9u5hQshJyUIaICrz17L3P//IsHaQrfsYmfE
-    A6oEc5R5nMYejGEOqXSGhRiZcDVV29awdM/fQwIDAQABAoIBAGmImAy02fI+m+z6
-    s80SI0xVTwsXxTxbaWtsHrjk96A5r0zPxYcjacq54Q5hPMZCYBxEWVAq3D3+po3e
-    MZ/jDvJtnJrxkCa1HX/zFcK9SqiFfPaEI9f5K/8svGdWDNp3xhM8oK80hw8Ng1Vq
-    5bDJGEJ4U1fdo6JSjuyoF65ou+DLdDRrUU5AZFUQMtB63XTmSoZNGP1aUEXD0AiS
-    SfA6UUeTDVjOc+5CBDejmPUiie3nzlVw+qrwSQrrJlepAeZvtB6KzU4KT5KAhe7O
-    V5yUzuQDact8sIhgHLMYqKFsPE8AJ2MN23NNUlfMpwI7kKLqRzs7Bmb4YKPYKHnU
-    odBP2YECgYEA5Pi+0rz/BTIRZDb9fnkO9/N2duET4OroN1B39pOilePvvarsV6wF
-    ZeWALzLBEQiUwtGqgLV13wG7ZxcLEGQkvEdogirsaQmy0dVNSv2wlcpOcvJuLPa3
-    ayAguUm4kLM2Zkd4ODaxf1HJSxTujQcI9sydyy7x9YN5La0sLQXPVecCgYEAzWWP
-    iMTgfDvryCqXm0/nCrJXrGnT/SyIzwTytpq3U5C9nixqqrDdPbCiaUDF2MmLoyzt
-    hp/nen2XYPw2EYV2vCe2XFVeya8iftDXSERAB1ThXqKGt9JW1Vi+AorjAZG0uVOx
-    NyYEH3sDp9jg5861Q3PxYEJ3iKRvC3I/tD/9iEUCgYEAivqcwMcst5ebTMu/89tB
-    BalGN4QIj9Wlm6WBGy6jWf2fT+2GRPTJ1f6GXp+c5lziBppCtprt761adYlcEtfm
-    IE3rlk69bkgPvSOOJb10SIciNM0HqM0bqa83jZ+8oj/U/iHVS7GO7SvUVXlgDkO9
-    4idyg5h8Drx9egcJsE49efMCgYEAqSrBqhrE7W2Ix4bU8RVBLF0wuo87CyUX1LG1
-    mdIZtdjbY6AfhlA/F+UYDupLST7OJGoHg77FruwrtrRjb9DltxhaKPgjJqd5GMu2
-    1A1qUt+E8yWXIWU7IWKCtKNhTlSMbatRpSNJeAggPajxq9pjDpg6sFZuDvunfdzu
-    PO4LSaUCgYEAzDG1gIATM9+j2pZK+ALQuAhBN1KVNASD+utYyFUGSC6kpu29cPWO
-    Rgy7JhASU4QdQ3OSuzpkKEe2CsFP3Ms5tZsOiEpBfFpvSUEYq4ys6eGaqAo1Vaxq
-    X7rqTlZsxl7XftY8bK3uP3zUxxhZzIhVbuFaE7OpXzH6uXrpLAmXbtM=
-    -----END RSA PRIVATE KEY-----
-
 ####  Make sure everything compiles on Circle
 
 Go to the URL:
@@ -167,10 +136,8 @@ Special notes:
 * If you have a problem with a generated PDF, please attach the offending PDF.
 * If you say something like "This happens for Figure 3", then it is hard to know which figure you are referencing exactly, because numbering changes from commit to commit.
 
-
 If you want to refer to specific parts of the text, please commit all your work on your branch, and obtain the name of the commit using the following commands:
 
 ```
-$ git -C ~/duckuments rev-parse HEAD      # commit for duckuments
-$ git -C ~/duckuments/mcdp rev-parse HEAD # commit for mcdp
+$ git rev-parse HEAD 
 ```

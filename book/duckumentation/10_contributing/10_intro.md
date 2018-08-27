@@ -8,7 +8,6 @@ The documentation is contained in a series of repositories called `docs-![short 
 * [docs-AIDO](http://github.com/duckietown/docs-AIDO) 
 * [docs-software_devel](http://github.com/duckietown/docs-software_devel) 
 
-In addition, there is a repository `duckietown/duckuments` that contains the `docs-![xxx]` repositories as Git submodules.
 
 ## Documentation format 
 

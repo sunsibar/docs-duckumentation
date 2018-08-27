@@ -1,6 +1,6 @@
-# Experts: Compiling all books {#duckumentation-installing-docs-system status=ready}
+# (Experts) Compiling all books {#duckumentation-installing-docs-system status=ready}
 
-This section describes how to compile all books at the same time. 
+This section describes how to compile all the books at the same time. 
 
 ## Setup
 
@@ -11,33 +11,21 @@ In the following, we are going to assume that the documentation system is instal
 Fork the `duckietown/duckuments` repository in the `~/duckuments` directory:
 
 ```
-$ git clone --depth 11 git@github.com:duckietown/duckuments ~/duckuments
+$ git clone --depth 10 git@github.com:duckietown/duckuments ~/duckuments
 $ cd ~/duckuments
-$ git submodule init
+$ git submodule init --recursive
 $ git submodule update --recursive 
 ```
 
 The command `--depth 10` tells it we do not care about the whole history.
 
 ### Setup the virtual environment
+
 ```
 $ cd ~/duckuments
 $ virtualenv --system-site-packages deploy 
 $ git clone git@github.com:AndreaCensi/mcdp.git
 ```
-
-<!--
-
-Use this to install a virtual environment and dependencies:
-
-```
-$ cd ~/duckuments
-$ make dependencies-ubuntu16
-$ make install-ubuntu16
-```
-
-For other distributions, you might need to modify the `install-ubuntu16` Makefile recipe (e.g. use `venv` instead of `virtualenv`).
--->
 
 
 ## Compiling the documentation   {#compiling-master}
