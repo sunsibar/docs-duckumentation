@@ -26,7 +26,7 @@ Before you start, make sure that you have [installed Docker](+software_reference
 
 ### Install the Duckieton Shell
 
-Install the Duckietown Shell using the instructions at <http://github.com/duckietown/duckietown-shell>.
+Install the Duckietown Shell using [these instructions](https://github.com/duckietown/duckietown-shell).
  
 ### Fork the `docs-![book]` repo on the Github site
 
