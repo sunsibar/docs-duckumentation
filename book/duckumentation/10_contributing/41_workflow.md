@@ -44,7 +44,7 @@ TODO: re-make image
 
 Check out the forked repository as you would do normally.
 
-### Do your edits
+### Do your edits eeeee
 
 Do your edits on your local copy.
 
