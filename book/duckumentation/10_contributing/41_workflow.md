@@ -84,8 +84,7 @@ $ hub pull-request
 
 See: [](+software_reference#hub)
 
-
-## Using CircleCI
+## Using CircleCI {#duckumentation-workflow-circle}
 
 Circle CI makes it easier to check whether there are problems to be fixed.
 
@@ -122,22 +121,3 @@ You can also preview the results by clicking the "artifacts" tab and selecting `
  <img src='ci-artifacts.png' style='width:90%'/>
 </figure>
 
-
-## Reporting problems
-
-First, see the section [](#markduck-troubleshooting) for common problems and their resolution.
-
-Please report problems with the duckuments using [the `duckuments` issue tracker][tracker].
-
-[tracker]: https://github.com/duckietown/duckuments/issues
-
-Special notes:
-
-* If you have a problem with a generated PDF, please attach the offending PDF.
-* If you say something like "This happens for Figure 3", then it is hard to know which figure you are referencing exactly, because numbering changes from commit to commit.
-
-If you want to refer to specific parts of the text, please commit all your work on your branch, and obtain the name of the commit using the following commands:
-
-```
-$ git rev-parse HEAD 
-```
