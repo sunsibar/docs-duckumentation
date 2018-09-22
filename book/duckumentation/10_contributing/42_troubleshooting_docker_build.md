@@ -23,7 +23,7 @@ $ git rev-parse HEAD
 ```
 
 
-## Problem: The building hangs
+## Problem: The building hangs {#troubleshooting-build-hangs}
 
 ### Cause: insufficient memory
 
