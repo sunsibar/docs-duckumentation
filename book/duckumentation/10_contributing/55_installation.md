@@ -1,6 +1,6 @@
 # (Experts) Compiling all books {#duckumentation-installing-docs-system status=ready}
 
-This section describes how to compile all the books at the same time. 
+This section describes how to compile all the books at the same time.
 
 ## Setup
 
@@ -14,7 +14,7 @@ Fork the `duckietown/duckuments` repository in the `~/duckuments` directory:
 $ git clone --depth 10 git@github.com:duckietown/duckuments ~/duckuments
 $ cd ~/duckuments
 $ git submodule init --recursive
-$ git submodule update --recursive 
+$ git submodule update --recursive
 ```
 
 The command `--depth 10` tells it we do not care about the whole history.
@@ -23,7 +23,7 @@ The command `--depth 10` tells it we do not care about the whole history.
 
 ```
 $ cd ~/duckuments
-$ virtualenv --system-site-packages deploy 
+$ virtualenv --system-site-packages deploy
 $ git clone git@github.com:AndreaCensi/mcdp.git
 ```
 
@@ -80,7 +80,7 @@ $ make realclean
 
 ## Editing the books
 
-The books sources are in `docs/docs-![book]`. 
+The books sources are in `docs/docs-![book]`.
 
 Each of those are a submodule.
 
@@ -104,8 +104,8 @@ It also created a new Git remote called `![username]`:
     $ git remote -v
     ![username] git@github.com:![username]/docs-exercises.git (fetch)
     ![username] git@github.com:![username]/docs-exercises.git (push)
-    origin	git@github.com:duckietown/docs-exercises.git (fetch)
-    origin	git@github.com:duckietown/docs-exercises.git (push)
+    origin  git@github.com:duckietown/docs-exercises.git (fetch)
+    origin  git@github.com:duckietown/docs-exercises.git (push)
 
 Tell Git that you want to push to your fork:
 
@@ -113,26 +113,26 @@ Tell Git that you want to push to your fork:
 
 Now, when you push you will push to your fork:
 
-    $ git push 
+    $ git push
 
 To create a pull request, use:
 
     $ hub pull-request
     https://github.com/duckietown/docs-exercises/pull/![id]
 
-Visit the URL to check your pull request. 
+Visit the URL to check your pull request.
 
 
 ## Editing the book collection
 
-Once you have changed your changes to the books, you need to do a pull-request for the `duckuments` repo. 
+Once you have changed your changes to the books, you need to do a pull-request for the `duckuments` repo.
 
 
 ### Forking
 
 As before, make sure you are on your fork:
 
-    $ cd ~/duckuments/ 
+    $ cd ~/duckuments/
     $ hub fork
     Updating ![username]
     From ssh://github.com/duckietown/duckuments
@@ -150,12 +150,12 @@ If you go to `~/duckuments`, the status will appear like this:
     $ git status
     On branch master
     Your branch is up-to-date with 'origin/master'.
-    
+
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)
       (commit or discard the untracked or modified content in submodules)
-    
+
         modified:   docs/docs-exercises (new commits)
 
 This means that you have changes in the submodules that you need to commit.
@@ -168,4 +168,3 @@ Just like with files, you can use `git commit` to do so:
 Now create the pull request using:
 
     $ hub pull-request
-
