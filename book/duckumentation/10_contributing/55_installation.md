@@ -102,8 +102,8 @@ The command has forked the repository.
 It also created a new Git remote called `![username]`:
 
     $ git remote -v
-    ![username]	git@github.com:![username]/docs-exercises.git (fetch)
-    ![username]	git@github.com:![username]/docs-exercises.git (push)
+    ![username] git@github.com:![username]/docs-exercises.git (fetch)
+    ![username] git@github.com:![username]/docs-exercises.git (push)
     origin	git@github.com:duckietown/docs-exercises.git (fetch)
     origin	git@github.com:duckietown/docs-exercises.git (push)
 
