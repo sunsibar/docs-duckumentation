@@ -44,6 +44,16 @@ TODO: re-make image
 
 Check out the forked repository as you would do normally.
 
+### Initialize your folder
+
+When compiling a book for the first time, you need to run:
+
+    $ dts submodule init
+    
+And:
+
+    $ dts submodule update
+
 ### Do your edits eeeee
 
 Do your edits on your local copy.
