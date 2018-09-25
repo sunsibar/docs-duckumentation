@@ -48,11 +48,11 @@ Check out the forked repository as you would do normally.
 
 When compiling a book for the first time, you need to run:
 
-    $ dts submodule init
+    $ git submodule init
     
 And:
 
-    $ dts submodule update
+    $ git submodule update
 
 ### Do your edits eeeee
 
