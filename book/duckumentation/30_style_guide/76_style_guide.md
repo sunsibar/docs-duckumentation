@@ -105,6 +105,23 @@ If the command is supposed to be run on both, omit the hostname:
 
     $ cd ~/duckietown
 
+For a container:
+
+    container $ echo container
+
+For a container on a Duckiebot:
+
+    duckiebot-container $ echo container
+    
+For a container on the laptop:
+
+    laptop-container $ echo container
+
+For a container on a traffic light:
+
+    trafficlight-container $ echo container
+
+
 ## Frequently misspelled words
 
 - "Duckiebot" is always capitalized.
