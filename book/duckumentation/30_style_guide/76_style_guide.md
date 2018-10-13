@@ -193,3 +193,5 @@ Resolution: Maybe the camera is not inserted correctly. Remove and reconnect.
 Symptom: This other strange thing happens.
 
 Resolution: Maybe the plumbus is not working correctly. Try reformatting the plumbus.
+
+ 
