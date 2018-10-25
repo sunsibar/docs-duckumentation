@@ -54,7 +54,7 @@ And:
 
     $ git submodule update
 
-### Do your edits eeeee
+### Do your edits
 
 Do your edits on your local copy.
 
