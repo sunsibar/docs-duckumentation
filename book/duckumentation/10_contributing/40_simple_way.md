@@ -19,9 +19,11 @@ Do your edits where appropriate.
     <img src="s3.png" style='width: 8cm'/>
 </div>
 
+
 You can check the outcome by clicking on `Preview changes`, note that not all functionalities are visible by the preview. For large changes refer to [](#duckumentation-workflow).
 
-<div figure-id="fig:simple_way_4" figure-caption=A preview of the changes.">
+
+<div figure-id="fig:simple_way_4" figure-caption="A preview of the changes.">
     <img src="s4.png" style='width: 8cm'/>
 </div>
 
@@ -33,7 +35,7 @@ Then after your edits, in the bottom part of the webpage, describe your commit a
 
 Then, click on `Create pull request`, as you probably don't have rights to push directly.
 
-<div figure-id="fig:simple_way_5" figure-caption="Create a pull request.">
+<div figure-id="fig:simple_way_6" figure-caption="Create a pull request.">
     <img src="s6.png" style='width: 8cm'/>
 </div>
 
