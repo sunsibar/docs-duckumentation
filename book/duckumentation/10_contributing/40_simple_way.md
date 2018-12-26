@@ -3,6 +3,7 @@
 
 The simplest way to contribute to the documentation is to click any of the "✎" icons next to the headers, in the book itself.
 
+
 <div figure-id="fig:simple_way_1" figure-caption="Click on edit button.">
     <img src="s1.png" style='width: 8cm'/>
 </div>
