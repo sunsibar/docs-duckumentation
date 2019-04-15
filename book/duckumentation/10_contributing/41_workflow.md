@@ -14,11 +14,11 @@ In a nutshell:
 
 We assume that you have setup a Github account with working public keys.
 
-See: [Basic SSH config](+software_reference#ssh-local-configuration).
+See: [Basic SSH config](+software_reference#github-access).
 
 See: [Key pair creation](+software_reference#howto-create-key-pair).
 
-See: [Adding public key on Github](+software_reference#howto-add-pubkey-to-github).
+See: [Adding public key on Github](+software_reference#github-access).
 
 ### Install Docker
 
@@ -27,7 +27,7 @@ Before you start, make sure that you have [installed Docker](+software_reference
 ### Install the Duckieton Shell
 
 Install the Duckietown Shell using [these instructions](https://github.com/duckietown/duckietown-shell).
- 
+
 ### Fork the `docs-![book]` repo on the Github site
 
 Fork one of the `docs-![book]` repos on the Github site ([](#fork-duckuments)).
@@ -49,19 +49,19 @@ Check out the forked repository as you would do normally.
 Go into the folder:
 
     $ cd docs-![book]
-    
+
 
 When compiling a book for the first time, you need to run:
 
     $ git submodule init
-    
+
 And:
 
     $ git submodule update
 
 ### Do your edits
 
-Do your edits on your local copy. The source files are in the director `book/![book]`. The file and folder names start with numbers, these are used to determine the order that things show up in output. 
+Do your edits on your local copy. The source files are in the director `book/![book]`. The file and folder names start with numbers, these are used to determine the order that things show up in output.
 
 ### Compile
 
@@ -74,11 +74,11 @@ Re-compile from scratch using:
     $ dts docs clean
     $ dts docs build
 
-If there are errors you should open `duckuments-dist/errors.html` and look at them and fix them. 
+If there are errors you should open `duckuments-dist/errors.html` and look at them and fix them.
 
 ### Look at the local copy
 
-Open the file `index.html` and navigate to whichever pages you have changed to make sure that they look the way want them to. 
+Open the file `index.html` and navigate to whichever pages you have changed to make sure that they look the way want them to.
 
 ### Commit and push
 
@@ -92,7 +92,7 @@ Create a pull request to the original repository.
 
 Github offers a nice interface to create a pull request.
 
-TODO for volunteer: add image of pull request 
+TODO for volunteer: add image of pull request
 
 #### Option 2: Use the command-line program `hub`
 
@@ -140,4 +140,3 @@ You can also preview the results by clicking the "artifacts" tab and selecting `
 <figure id="ci-artifacts">
  <img src='ci-artifacts.png' style='width:90%'/>
 </figure>
-
