@@ -2,7 +2,7 @@
 
 To create slides, use `type=slides` for an H1 header:
 
-```markdown 
+```markdown
 # Making slides {#making-slides type=slides status=ready nonumber=1}
 
 To create slides, use the attribute `type=slides` for an H1 header:
@@ -15,7 +15,8 @@ To create slides, use the attribute `type=slides` for an H1 header:
 Use second-level headers to make subsequent slides:
 
 ```markdown
-# Making slides {#making-slides type=slides status=beta}
+
+# Making slides {#making-slides type=slides status=ready}
 
 
 To create slides, use `type=slides` for an H1 header:
@@ -27,10 +28,10 @@ To create slides, use `type=slides` for an H1 header:
 Use second-level headers to make subsequent slides:
 
 
-``` 
+```
 
 
-## Stepping 
+## Stepping
 
 Use the symbol `▶` to make the corresponding fragment appear on click.
 
@@ -46,23 +47,23 @@ Use the symbol `▶` to make the corresponding fragment appear on click.
 * Step 1 ▶
 * Step 2 ▶
 * Step 3 ▶
- 
+
 
 ## Maths
 
 Latex still works here.
 
-A simple test for math: 
+A simple test for math:
 
 $$
-a + b \geq \sqrt{c} 
+a + b \geq \sqrt{c}
 $$
 
 ## Stepping through equations
 
 You can also step through equations:
 
-```markdown 
+```markdown
 
 Consider: ▶
 
@@ -89,7 +90,7 @@ $$
 c = d ▶
 $$
 
-Stepping through partial parts of equations is not supported. 
+Stepping through partial parts of equations is not supported.
 
 
 
@@ -142,11 +143,11 @@ Use a blockquote at the end of a slide to encode the presenter notes:
 > These are presenter notes that will appear in presenter mode.
 ```
 
-> These are presenter notes that will appear in presenter mode. 
+> These are presenter notes that will appear in presenter mode.
 
 ## Under the hood
 
-* All of this is built on top of `reveal.js`. 
+* All of this is built on top of `reveal.js`.
 
 * Please see [`reveal.js`](https://revealjs.com/) for the complete list of features.
 
