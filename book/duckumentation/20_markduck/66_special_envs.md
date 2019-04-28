@@ -4,9 +4,10 @@
 
 The system supports parsing of some special paragraphs.
 
-Note: some of these might be redundant and will be eliminated. For now,
+<!--
+Note some of these might be redundant and will be eliminated. For now,
 I am documenting what is implemented.
-
+-->
 
 ### Special paragraphs must be separated by a line {#empty-line-before-special}
 
@@ -106,7 +107,6 @@ Q: question
 
 A: answer
 
-
 ### Authors, maintainers, Point of Contact
 
     Maintainer: maintainer
@@ -114,8 +114,9 @@ A: answer
 Maintainer: maintainer
 
     Assigned: AndreaCensi
-    
+
 Assigned: AndreaCensi
+
 
 <!-- deprecated
 
