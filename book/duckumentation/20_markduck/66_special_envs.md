@@ -5,7 +5,7 @@
 The system supports parsing of some special paragraphs.
 
 <!--
-Note: some of these might be redundant and will be eliminated. For now,
+Note some of these might be redundant and will be eliminated. For now,
 I am documenting what is implemented.
 -->
 
