@@ -1,4 +1,3 @@
-
 This repository is a duckuments book. 
 
 Please see the [book instructions](http://docs.duckietown.org/DT19/duckumentation/out/index.html)
