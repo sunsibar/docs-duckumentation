@@ -238,3 +238,34 @@ You can then include the PDF file in a normal way ([](#figures)) using `![filena
 
 
 It can take a bit of work to get the positioning of the code to appear properly on the figure.
+
+## Using the HTML equivalent of Latex environments {#latex-html}
+
+You can create an exercise as follows:
+
+    
+    <div id="exercise:my-exercise" class="exercise">
+        This is an exercise written labeled "exercise:my-exercise". 
+    </div>
+    
+    <div class="exercise">
+        This is an exercise not labeled. 
+    </div>
+    
+    Referring to the exercise: [](#exercise:my-exercise) or [](#my-exercise).
+
+<div id="exercise:my-exercise" class="exercise">
+    This is an exercise written labeled "exercise:my-exercise". 
+</div>
+
+<div class="exercise">
+    This is an exercise not labeled. 
+</div>
+    
+Referring to the exercise: [](#exercise:my-exercise) or [](#my-exercise).
+
+
+
+
+
+

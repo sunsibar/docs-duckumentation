@@ -2,3 +2,5 @@
 
 This part describes the backend that allows the website to be published
 at `docs.duckietown.org`.
+
+<minitoc/>
