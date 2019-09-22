@@ -4,6 +4,7 @@ The Duckiebooks are written in Markduck, a Markdown dialect.
 
 It supports many features that make it possible to create publication-worthy materials.
 
+<minitoc/>
 
 ## Markdown
 

@@ -6,6 +6,8 @@ Requires: Working knowledge of LaTeX.
 
 </div>
 
+<minitoc levels="2"/>
+
 ## Embedded LaTeX
 
 You can use $\LaTeX$ math, environment, and references. For example, take a look at
@@ -22,7 +24,7 @@ This is an example proposition: $2x = x + x$.
 
 The above was written as in [](#code:latex-code).
 
-<pre figure-id="code:latex-code" figure-caption='Use of LaTeX code.'>
+<pre class="latex" figure-id="code:latex-code" figure-caption='Use of LaTeX code.'>
 <code>
 You can use &#36;\LaTeX&#36; math, environment, and references.
 For example, take a look at
@@ -67,47 +69,47 @@ Examples of all environments follow.
 
 <div class='example-usage' markdown="1">
 
-  <pre><code>&#92;begin{definition}   \label{def:lorem}
+  <pre><code>&#92;begin{definition}[My definition]   \label{def:lorem}
 Lorem
 &#92;end{definition}</code></pre>
 
-\begin{definition}\label{def:lorem}Lorem\end{definition}
+\begin{definition}[My definition]\label{def:lorem}Lorem\end{definition}
 
-  <pre><code>&#92;begin{proposition}   \label{prop:lorem}
+  <pre><code>&#92;begin{proposition}[My proposition]   \label{prop:lorem}
 Lorem
 &#92;end{proposition}</code></pre>
 
-\begin{proposition}\label{prop:lorem}Lorem\end{proposition}
+\begin{proposition}[My proposition]\label{prop:lorem}Lorem\end{proposition}
 
-  <pre><code>&#92;begin{remark}   \label{rem:lorem}
+  <pre><code>&#92;begin{remark}[My remark]   \label{rem:lorem}
 Lorem
 &#92;end{remark}</code></pre>
 
-\begin{remark}\label{rem:lorem}Lorem\end{remark}
+\begin{remark}[My remark]\label{rem:lorem}Lorem\end{remark}
 
-  <pre><code>&#92;begin{problem}    &#92;label{prob:lorem}
+  <pre><code>&#92;begin{problem}[My problem]    &#92;label{prob:lorem}
 Lorem
 &#92;end{problem}</code></pre>
 
-\begin{problem}\label{prob:lorem}Lorem\end{problem}
+\begin{problem}[My problem]\label{prob:lorem}Lorem\end{problem}
 
-  <pre><code>&#92;begin{example}   \label{exa:lorem}
+  <pre><code>&#92;begin{example}[My example]   \label{exa:lorem}
 Lorem
 &#92;end{example}</code></pre>
 
-\begin{example}\label{exa:lorem}Lorem\end{example}
+\begin{example}[My example]\label{exa:lorem}Lorem\end{example}
 
-  <pre><code>&#92;begin{theorem}   \label{thm:lorem}
+  <pre><code>&#92;begin{theorem}[My theorem]   \label{thm:lorem}
 Lorem
 &#92;end{theorem}</code></pre>
 
-\begin{theorem}\label{thm:lorem}Lorem\end{theorem}
+\begin{theorem}[My theorem]\label{thm:lorem}Lorem\end{theorem}
 
-  <pre><code>&#92;begin{lemma}   \label{lem:lorem}
+  <pre><code>&#92;begin{lemma}[My lemma]   \label{lem:lorem}
 Lorem
 &#92;end{lemma}</code></pre>
 
-\begin{lemma}\label{lem:lorem}Lorem\end{lemma}
+\begin{lemma}[My lemma]\label{lem:lorem}Lorem\end{lemma}
 
     I can also refer to all of them:
     [](#def:lorem),
@@ -241,31 +243,78 @@ It can take a bit of work to get the positioning of the code to appear properly 
 
 ## Using the HTML equivalent of Latex environments {#latex-html}
 
+<minitoc/>
+
 You can create an exercise as follows:
 
-    
-    <div id="exercise:my-exercise" class="exercise">
-        This is an exercise written labeled "exercise:my-exercise". 
-    </div>
-    
-    <div class="exercise">
-        This is an exercise not labeled. 
-    </div>
-    
-    Referring to the exercise: [](#exercise:my-exercise) or [](#my-exercise).
-
-<div id="exercise:my-exercise" class="exercise">
-    This is an exercise written labeled "exercise:my-exercise". 
+```html
+<div id="exercise:my-exercise" class="exercise" title="Exercise title">
+    This is an exercise labeled "exercise:my-exercise". 
 </div>
 
-<div class="exercise">
+<div class="exercise" title="Second exercise">
+    This is an exercise not labeled. 
+</div>
+
+Referring to the exercise: [](#exercise:my-exercise) or [](#my-exercise).
+```
+
+
+<div id="exercise:my-exercise" class="exercise" title="Exercise title">
+    This is an exercise labeled "exercise:my-exercise". 
+</div>
+
+<div class="exercise" title="Second exercise">
     This is an exercise not labeled. 
 </div>
     
 Referring to the exercise: [](#exercise:my-exercise) or [](#my-exercise).
 
+## Alternative style
 
+If you have block content element (e.g. code blocks), you must use headers as html cannot contain block-level Markdown.
 
+You must use somethign like the following. The marker `end` tells the system to stop the level 4 section.
 
+```markdown
+#### Another exercise {#exercise:another}
 
+This is another exercise with block content:
+
+    $ echo hello
+    
+<end/>
+
+This is part of the level 2 section.
+
+Another exercise starts for the rest of the section.
+
+#### Another exercise {#exercise:second}
+
+contents
+
+<end/>
+
+After the second exercise.
+```
+
+#### Another exercise {#exercise:another}
+
+This is another exercise with block content:
+
+    $ echo hello
+    
+<end/>
+
+This is part of the level 2 section.
+
+Another exercise starts for the rest of the section.
+
+#### Another exercise {#exercise:second}
+
+contents
+
+<end/>
+
+After the second exercise.
 
