@@ -55,8 +55,8 @@ Other symbols to escape are shown in [](#tab:escapes).
 <col2 figure-id="tab:escapes" figure-caption="Symbols to escape">
     <s>use <code>&amp;#36;</code> </s> <s>instead of <code>&#36;</code></s>
     <s>use <code>&amp;#96;</code> </s> <s>instead of <code>&#96;</code></s>
-    <s>use <code>&amp;#lt;</code> </s> <s>instead of <code>&lt;</code></s>
-    <s>use <code>&amp;#gt;</code> </s> <s>instead of <code>&gt;</code></s>
+    <s>use <code>&amp;lt;</code> </s> <s>instead of <code>&lt;</code></s>
+    <s>use <code>&amp;gt;</code> </s> <s>instead of <code>&gt;</code></s>
 </col2>
 
 
