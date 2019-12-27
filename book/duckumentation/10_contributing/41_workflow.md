@@ -61,7 +61,7 @@ And:
 
 ### Do your edits
 
-Do your edits on your local copy. The source files are in the director `book/![book]`. The file and folder names start with numbers, these are used to determine the order that things show up in output.
+Do your edits on your local copy. The source files are in the directory `book/![book]`. The file and folder names start with numbers, these are used to determine the order that things show up in output.
 
 ### Compile
 
