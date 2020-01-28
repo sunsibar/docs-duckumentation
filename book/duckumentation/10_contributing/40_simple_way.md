@@ -8,7 +8,11 @@ The simplest way to contribute to the documentation is to click any of the "✎"
     <img src="s1.png" style='width: 8cm'/>
 </div>
 
-They link to the "edit" page in Github. There, one can make and commit the edits in only a few seconds.
+They link to the "edit" page in Github. One can make and commit the edits in only a few seconds.
+
+If you are in the Duckietown organization, then you can just "edit" the page then and there. 
+Otherwise, you need to "fork" the repo. Don't worry, it's a one click process.
+
 
 <div figure-id="fig:simple_way_2" figure-caption="You will land on GitHub">
     <img src="s2.png" style='width: 8cm'/>
