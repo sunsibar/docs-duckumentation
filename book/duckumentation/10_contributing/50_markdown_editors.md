@@ -7,11 +7,13 @@ We suggest the following:
 
 ## Graphical Markdown editors
 
-### Typhora
+### Typora
 
-Typhora is our favorite beacause it allows to preview LaTeX formulas.
+[Typora](https://typora.io/) is our favorite beacause it allows to preview LaTeX formulas.
 
 <dtvideo src="vimeo:267112016"/>
+
+You might need to enable LaTeX formulas under `preferences`.  
 
 ## Text editors good for Markdown
 
