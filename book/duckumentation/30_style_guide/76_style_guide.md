@@ -12,6 +12,12 @@ The documentation is divided into books, parts (labeled 'part:') and units (with
 To create a new part, put `{#part:name status=STATUS}` after the header, like so:
 
     ## Safety {#part:safety status=ready}
+    
+For every page, please include a first-level header including a CSS-identifier and status in curly brackets. 
+Like this:
+    
+    `# Style guide {#documentation-style-guide status=ready}`
+    
 
 ## General guidelines for technical writing
 
