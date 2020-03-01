@@ -9,7 +9,7 @@ First, see the section [](#markduck-troubleshooting) for common problems and the
 
 Please report problems with the duckuments using [the `duckuments` issue tracker][tracker].
 
-[tracker]: https://github.com/duckietown/duckuments/issues
+[tracker]: https://github.com/duckietown/docs-duckumentation/issues
 
 Special notes:
 
