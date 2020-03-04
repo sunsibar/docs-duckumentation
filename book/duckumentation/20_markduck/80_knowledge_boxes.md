@@ -62,6 +62,10 @@ Better: **In "Requires:" lines, [link](#markduck-basic) to pages that provide th
 
 <br/>
 
+Better: **Link only to CSS-identifiers of other pages, not specific sections on that page.** (This might change in the future.)  
+
+<br/>
+
 Better: **One requirement or result per line**.   
 
 <br/>
@@ -153,13 +157,4 @@ To refer to an entity that is already known by the knowledge-box parsing algorit
 
 ## Suggestion for an alternative knowledge box format
 
-### The format
-
-TODO
-
-### Why?
-TODO
-- describe graph project
-- what cannot be inferred from the current KBs/
-- what features of the graph are not compatible (inferrable) from the KBs
-- what makes match-making most difficult
+See [here](https://github.com/duckietown/education-on-demand/docs/alternative_kb_format.md)  
